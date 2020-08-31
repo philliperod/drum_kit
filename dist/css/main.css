@@ -1,1 +1,15 @@
-/* No CSS */
+body {
+  background-color: #283149;
+}
+
+h1 {
+  color: #dbedf3;
+  font-family: 'Montserrat Subrayada', sans-serif;
+  text-shadow: 3px 0 #da0463;
+  font-size: 4rem;
+  text-align: center;
+}
+
+footer {
+  color: #dbedf3;
+}

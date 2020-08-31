@@ -1,0 +1,21 @@
+@import 'variables';
+
+@function weight($weight-names) {
+  @return map-get($font-weights, $weight-names);
+}
+
+body {
+  background-color: $primary-color;
+}
+
+h1 {
+  color: $secondary-color;
+  font-family: 'Montserrat Subrayada', sans-serif;
+  text-shadow: 3px 0 $shadow-color;
+  font-size: 4rem;
+  text-align: center;
+}
+
+footer {
+  color: $secondary-color;
+}
