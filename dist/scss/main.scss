@@ -6,6 +6,7 @@
 
 body {
   background-color: $primary-color;
+  text-align: center;
 }
 
 h1 {
@@ -18,4 +19,26 @@ h1 {
 
 footer {
   color: $secondary-color;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.keys {
+  margin: 10% auto;
+}
+
+.drum {
+  outline: none;
+  border: 10px solid $border-color;
+  font-size: 5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: weight(bold);
+  line-height: 2;
+  color: $shadow-color;
+  text-shadow: 3px 0 $border-color;
+  border-radius: 15px; //curves the edges
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  margin: 10px; // creates separation
+  background-color: #fff;
 }
