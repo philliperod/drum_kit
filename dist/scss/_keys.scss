@@ -8,17 +8,17 @@
 
 .drum {
   outline: none;
-  border: 10px solid $border-color;
+  border: 10px solid $accent-color;
   font-size: 5rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: weight(bold);
   line-height: 2;
   color: $shadow-color;
-  text-shadow: 3px 0 $border-color;
+  text-shadow: 3px 0 $secondary-color;
   border-radius: 15px; //curves the edges
   display: inline-block;
   width: 150px;
   height: 150px;
   margin: 10px; // creates separation
-  background-color: #fff;
+  background: rgba(0, 0, 0, 0.4);
 }
