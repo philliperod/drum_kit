@@ -22,3 +22,8 @@
   margin: 10px; // creates separation
   background: $transparent-color;
 }
+
+.pressed {
+  box-shadow: 0 3px 4px 0 $transparent-color;
+  opacity: 0.5;
+}

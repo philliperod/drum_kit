@@ -8,10 +8,14 @@ function handleClick() {
   const audio = document.querySelector(`audio[data-key="${keyCode}"]`);
   audio.currentTime = 0;
   audio.play();
+  const clickAnimation = document.querySelector(`.key[data-key="${keyCode}"]`);
+  clickAnimation.classList.add('pressed');
 
-  // store whatever data-key attribute into variable "keyCode"
-  // select audio element and corresponding stored variable "keyCode" and store it into variable "audio"
-  // play mp3 source file found with corresponding variable "audio" with its attribute data-key
+  // store the selected element with defined data-key into "keyCode" provided by click eventlistener
+  // store the audio element with defined data-key into variable "audio"
+  // keep play time of audio at zero and play
+  // store the selected "key" class with defined data-key into "keyAnimation"
+  // add "pressed" class (with CSS applied) to variable keyAnimation which holds selected element
 }
 
 document.addEventListener('keydown', handlePress);
@@ -21,4 +25,16 @@ function handlePress(event) {
   const audio = document.querySelector(`audio[data-key="${event.keyCode}"]`);
   audio.currentTime = 0;
   audio.play();
+  const keyAnimation = document.querySelector(`.key[data-key="${event.keyCode}"]`);
+  keyAnimation.classList.add('pressed');
+
+  // store the selected element with defined data-key into "audio" provided by input given from "keydown" eventListener
+  // keep play time of audio at zero and play
+  // store the selected "key" class with defined data-key into "keyAnimation"
+  // add "pressed" class (with CSS applied) to variable keyAnimation which holds selected element
 }
+
+// function buttonAnimation(currentKey) {
+//   const activeButton = document.querySelector(`button[data-key="${currentKey.keyCode}"]`);
+//   activeButton.classList.add('pressed');
+// }
