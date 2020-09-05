@@ -23,17 +23,17 @@
 }
 
 .key:active {
-  border: 5px solid #f5da55;
-  -webkit-box-shadow: 0 0 20px #f5da55;
-          box-shadow: 0 0 20px #f5da55;
+  border: 5px solid #da0463;
+  -webkit-box-shadow: 0 0 20px #da0463;
+          box-shadow: 0 0 20px #da0463;
   -webkit-transform: scale(1.25);
           transform: scale(1.25);
 }
 
 .pressed {
-  border: 5px solid #f5da55;
-  -webkit-box-shadow: 0 0 20px #f5da55;
-          box-shadow: 0 0 20px #f5da55;
+  border: 5px solid #da0463;
+  -webkit-box-shadow: 0 0 20px #da0463;
+          box-shadow: 0 0 20px #da0463;
   -webkit-transform: scale(1.25);
           transform: scale(1.25);
 }
