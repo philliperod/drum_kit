@@ -4,26 +4,36 @@
 
 .keys {
   margin: 10% auto;
+  padding: 3%;
 }
 
 .key {
   outline: none;
   border: 10px solid $transparent-color;
-  font-size: 5rem;
+  font-size: 4rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: weight(bold);
-  line-height: 2;
+  // line-height: 2;
   color: $shadow-color;
   text-shadow: 3px 0 $secondary-color;
   border-radius: 15px; //curves the edges
   display: inline-block;
-  width: 150px;
-  height: 150px;
+  width: 125px;
+  height: 125px;
   margin: 10px; // creates separation
   background: $transparent-color;
+  transition: all 0.1s;
+  cursor: pointer;
+
+  &:active {
+    border: 5px solid #f5da55;
+    box-shadow: 0 0 20px #f5da55;
+    transform: scale(1.25);
+  }
 }
 
 .pressed {
-  box-shadow: 0 3px 4px 0 $transparent-color;
-  opacity: 0.5;
+  border: 5px solid #f5da55;
+  box-shadow: 0 0 20px #f5da55;
+  transform: scale(1.25);
 }
